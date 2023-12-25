@@ -12,22 +12,40 @@
     <!----------------------Email UI Container----------------->
         <div class="container-fluid h-100">
             <div class="row">
-
-
                 <!--------------------Main Nav--------------------->
                 <div class="col 12 col-xl-2 bg-success text-white Nav Menu">
-                    Nav Menu
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Inbox</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Favorite</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Trash</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Spam</a>
+                        </li>
+                      </ul>
                 </div>
 
 
                 <!--------------- Email Inbox------------------->
                 <div class="col-12  col-md-5 col-xl-4  bg-dark text-white email inbox" style="height: 65vh;">
-                    <div class="input-group rounded">
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                        <span class="input-group-text border-0" id="search-addon">
-                          <i class="fas fa-search"></i>
-                        </span>
-                    </div
+                    <form action="">
+                        <input type="text" placeholder="search inbox" name="q">
+                        <button type="submit"><img src="search.svg"></button>
+                    </form>
+                    
+                    <div class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                          The current button
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">A second button item</button>
+                        <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+                        <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+                      </div>
                 </div>
 
                 <!--------------- Open Email ------------------->
